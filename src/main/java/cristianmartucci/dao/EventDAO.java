@@ -29,7 +29,7 @@ public class EventDAO {
     public void delete(long eventId) {
         Event event = this.getById(eventId);
         EntityTransaction transaction = em.getTransaction();
-        transaction.commit();
+        transaction.begin();
         em.remove(event);
         transaction.commit();
         System.out.println("L'evento: '" + event + "' è stato eliminato correttamente");
