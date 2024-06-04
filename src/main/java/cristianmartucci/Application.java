@@ -26,9 +26,6 @@ public class Application {
         LocalDate date4 = LocalDate.of(2024, 6, 6);
         Event event4 = new Event("Run 5.30", date3, "Evento pubblico", EventType.PUBBLICO, 3000);
 
-//        Faker faker = new Faker();
-//        faker.chuckNorris().fact();
-
 //        ed.save(event);
 //        ed.save(event2);
 //        ed.save(event3);
