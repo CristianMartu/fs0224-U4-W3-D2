@@ -7,26 +7,26 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "Events")
+@Table(name = "events")
 public class Event {
     @Id
     @GeneratedValue
     private long id;
 
-    @Column(name = "Title")
+    @Column(name = "title")
     private String title;
 
-    @Column(name = "Event date")
+    @Column(name = "event date")
     private LocalDate event_date;
 
-    @Column(name = "Description")
+    @Column(name = "description")
     private String description;
 
-    @Column(name = "Event typoe")
+    @Column(name = "event type")
     @Enumerated(EnumType.STRING)
     private EventType event_type;
 
-    @Column(name = "Max people")
+    @Column(name = "max people")
     private int max_people;
 
     public Event() {
